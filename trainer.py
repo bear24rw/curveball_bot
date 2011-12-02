@@ -106,7 +106,7 @@ while True:
                         (cv_img.width, center_point[1]),
                         cv.CV_RGB(255,0,0), 1, cv.CV_AA, 0)
 
-        root.warp_pointer(curveball.geom.x + center_point[0], curveball.geom.y + center_point[1])
+        root.warp_pointer(curveball.geom.x + center_point[0], curveball.geom.y + center_point[1] + curveball.geom.height*0.015)
 
     cv.ShowImage("Curveball Trainer - Filtered", g_img)
     cv.ShowImage("Curveball Trainer", cv_img)
